@@ -1,21 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
-}
-.player{
-    border: 2px solid black;
-    margin: 40px 20px 80px 20px ;
-    padding: 40px;
-    background-color: antiquewhite;
-}
-.theme{
-    height: 137px;
-    width: 195px;
-}
-#title{
-    text-align: center;
-    margin: auto;
+
+    background: linear-gradient(
+        135deg,
+        #000000,
+        #1a0000,
+        #521212,
+        #000000
+    );
 }
 
+.player{
+    width: 350px;
+
+    background: rgba(20,20,20,0.8);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,0,0,0.3);
+
+    border-radius: 25px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 0 20px rgba(255,0,0,0.3),
+        0 0 40px rgba(255,0,0,0.15);
+
+    text-align: center;
+}
+
+.theme{
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 20px rgba(255,0,0,0.4);
+}
+
+#title{
+    color: white;
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+#artist{
+    color: #bdbdbd;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+p{
+    color: white;
+}
+
+#progress{
+    width: 100%;
+    margin-top: 15px;
+
+    accent-color: red;
+    cursor: pointer;
+}
+
+.controls{
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.controls button{
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #ff0000;
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.controls button:hover{
+    transform: scale(1.1);
+
+    background: #ff3b3b;
+
+    box-shadow:
+        0 0 15px red;
+}
+
+.volume{
+    margin-top: 20px;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#volume{
+    width: 120px;
+    accent-color: red;
+    cursor: pointer;
+}
