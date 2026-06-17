@@ -47,8 +47,7 @@ While building this project, I learned:
 * JavaScript Functions and Arrays
 
 ## 📸 Screenshot
-
-Add a screenshot of your music player here.
+<img width="1272" height="907" alt="image" src="https://github.com/user-attachments/assets/9a50c8f8-655f-4d6a-9c5d-3b5c74b5567b" />
 
 ## 🔮 Future Improvements
 
