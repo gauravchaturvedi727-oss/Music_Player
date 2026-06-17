@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="player">
+
+            <img class="theme" src="2128.jpg" alt="pic">
+
+    <h2 id="title">Song 1</h2>
+    <p id="artist">Hardy Sandhu</p>
+
+    <audio id="song">
+        <source src="Shoorveer_III_-_Slowed_Reverb_Use_Headphones_[_YouConvert.net_].mp3" type="audio/mpeg">
+        <source src="Desi_Boyz_Lo-fi_song_Slowed_Reverb_Dream_99k_[_YouConvert.net_].mp3" type="audio/mpeg">
+        <source src="Shaam_Bhi_Khoob_Hai_lofi_song_Karz_Udit_Narayan_Slowed_Reverb_Ritik_AUDIOS_cblofistudio_[_YouConvert.net_].mp3" type="audio/mpeg">
+    </audio>
+
+    <p>
+        <span id="current">0:00</span>
+        /
+        <span id="total">0:00</span>
+    </p>
+
+    <input type="range" id="progress" value="0">
+
+    <div class="controls">
+        <button id="prev">⏮</button>
+        <button id="play">▶</button>
+        <button id="pause">⏸</button>
+        <button id="next">⏭</button>
+    </div>
+
+    <div class="volume">
+        🔊
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+    </div>
+
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>

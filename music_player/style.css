@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.player{
+    border: 2px solid black;
+    margin: 40px 20px 80px 20px ;
+    padding: 40px;
+    background-color: antiquewhite;
+}
+.theme{
+    height: 137px;
+    width: 195px;
+}
+#title{
+    text-align: center;
+    margin: auto;
+}
+
