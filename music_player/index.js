@@ -7,6 +7,7 @@ const total = document.getElementById("total");
 const current = document.getElementById("current");
 const progress = document.getElementById("progress");
 const volume = document.getElementById("volume");
+const mute = document.getElementById("mute");
 
 play.addEventListener('click', playing);
 
@@ -78,4 +79,19 @@ function forward(){
 
 volume.addEventListener("input", () =>{
     song.volume = volume.value;
+});
+
+
+mute.addEventListener("click" ,() =>{
+
+    if(volume.value > 0){
+        volume.value = 0;
+        song.volume = volume.value;
+        mute.textContent = "🔇";
+    }
+    else{
+        volume.value = volume.max;
+        song.volume = volume.value;
+        mute.textContent = "🔊";
+    }
 });
